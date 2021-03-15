@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+/* Spacing, Organization, Basic Styles */
+.intro-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #26dbff;
+  border: 3px solid #DBFF26;
+  margin: 0;
+  padding: 1vw 1vh;
+}
+
+.intro-img {
+  width: 90%;
+}
+
+.title-1 .desc-1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts */
+
+.title-1, .desc-1 {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  color: #FF26DB;
+}
+
+.title-1 {
+  font-size: 3rem;
+}
+
+.desc-1 {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px){
+  .intro-card {
+    flex-direction: column;
+  }
+}

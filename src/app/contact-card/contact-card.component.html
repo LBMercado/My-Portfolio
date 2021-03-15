@@ -1,0 +1,12 @@
+<div class="contact-card">
+  <ul class="contact-card-ul">
+    <div class="contact-card-li-container" *ngFor="let contact of contactDisplays">
+      <img [src]="contact.contactIconUrl" alt="" class="contact-card-li-img">
+      <li class="contact-card-li" >
+        <a [href]="contact.siteUrl" class="contact-card-li-link">
+          {{contact.contactName}}
+        </a>
+      </li>
+    </div>
+  </ul>
+</div>

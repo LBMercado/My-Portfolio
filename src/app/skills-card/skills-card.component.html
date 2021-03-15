@@ -1,0 +1,8 @@
+<div class="skills-card">
+  <ul class="skill-ul">
+    <div class="skill-item-container" *ngFor="let skill of skillDisplays">
+      <img [src]="skill.skillIconUrl" alt="" class="skill-icon">
+      <li class="skill-ul-li">{{skill.skillName}}</li>
+    </div>
+  </ul>
+</div>
