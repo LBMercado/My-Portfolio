@@ -2,4 +2,8 @@
   <p class="footer-text">
     {{footerText}}
   </p>
+  <div class="footer-div">
+    Icons made by
+    <app-footer-credit *ngFor="let author of authorReferences" [author]='author' ></app-footer-credit>
+  </div>
 </footer>>
