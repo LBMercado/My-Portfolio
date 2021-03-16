@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
-
 /* Basic Styles */
 .skills-card {
   display: grid;
@@ -23,7 +21,6 @@
 /* Typography */
 
 .skill-ul-li {
-  font-family: "Roboto Slab", Arial, serif;
   font-size: 1.5rem;
   color: #FF26DB;
 }
