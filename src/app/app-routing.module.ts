@@ -19,7 +19,7 @@ const routes: Routes = [
     component: ContactCardComponent
   },
   {
-    path: 'project',
+    path: 'projects',
     component: ProjectCardComponent
   },
   {
