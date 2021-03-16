@@ -9,6 +9,7 @@ import { ContactCardComponent } from './contact-card/contact-card.component';
 import { FooterInfoComponent } from './footer-info/footer-info.component';
 import { HeaderInfoComponent } from './header-info/header-info.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import { FooterCreditComponent } from './footer-credit/footer-credit.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     ContactCardComponent,
     FooterInfoComponent,
     HeaderInfoComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    FooterCreditComponent
   ],
   imports: [
     BrowserModule,
