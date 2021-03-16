@@ -1,8 +1,8 @@
 export class SkillDisplay {
   skillName: string;
   skillIconUrl: string;
-  constructor(){
-    this.skillName = '';
-    this.skillIconUrl = '';
+  constructor(skillName: string, skillIconUrl: string){
+    this.skillName = skillName;
+    this.skillIconUrl = skillIconUrl;
   }
 }

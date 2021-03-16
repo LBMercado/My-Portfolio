@@ -3,9 +3,9 @@ export class ContactDisplay {
   contactIconUrl: string;
   siteUrl: string;
 
-  constructor(){
-    this.contactName = '';
-    this.contactIconUrl = '';
-    this.siteUrl = '';
+  constructor(contactName: string, contactIconUrl: string, siteUrl: string){
+    this.contactName = contactName;
+    this.contactIconUrl = contactIconUrl;
+    this.siteUrl = siteUrl;
   }
 }

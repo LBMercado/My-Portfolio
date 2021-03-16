@@ -3,9 +3,9 @@ export class ProjectDisplay {
   projectImgUrl: string;
   projectDescription: string;
 
-  constructor(){
-    this.projectName = '';
-    this.projectImgUrl = '';
-    this.projectDescription = '';
+  constructor(projectName: string, projectImageUrl: string, projectDescription: string){
+    this.projectName = projectName;
+    this.projectImgUrl = projectImageUrl;
+    this.projectDescription = projectDescription;
   }
 }
