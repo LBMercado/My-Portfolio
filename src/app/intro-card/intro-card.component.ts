@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioOwnerService } from '../portfolio-owner.service';
+import { PortfolioOwnerService } from '../services/portfolio-owner.service';
 
 @Component({
   selector: 'app-intro-card',

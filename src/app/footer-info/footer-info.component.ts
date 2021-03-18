@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthorInfo } from '../../../models/author-info/author-info';
-import { CreditAuthorService } from '../credit-author.service';
+import { AuthorInfo } from '../models/author-info/author-info';
+import { CreditAuthorService } from '../services/credit-author.service';
 
 @Component({
   selector: 'app-footer-info',

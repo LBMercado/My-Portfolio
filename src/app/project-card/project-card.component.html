@@ -5,6 +5,11 @@
       <li class="project-card-li">
         {{ proj.projectName }}
       </li>
+      <div class="project-card-technologies-container">
+        <ul class="project-card-technologies-ul">
+          <li class="project-card-technologies-li" *ngFor="let tech of proj.technologies">{{ tech }}</li>
+        </ul>
+      </div>
       <p class="project-card-desc">
         {{ proj.projectDescription }}
       </p>

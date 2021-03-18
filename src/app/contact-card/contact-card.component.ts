@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ContactDisplay } from 'models/contact-display/contact-display';
+import { ContactDisplay } from '../models/contact-display/contact-display';
 
 
 @Component({

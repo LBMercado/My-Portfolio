@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectDisplay } from 'models/project-display/project-display';
+import { ProjectDisplay } from '../models/project-display/project-display';
 
 @Component({
   selector: 'app-project-card',

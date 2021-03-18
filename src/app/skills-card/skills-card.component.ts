@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillDisplay } from 'models/skill-display/skill-display';
-import { SkillsService } from '../skills.service';
+import { SkillDisplay } from '../models/skill-display/skill-display';
+import { SkillsService } from '../services/skills.service';
 
 @Component({
   selector: 'app-skills-card',
