@@ -6,15 +6,13 @@ import { mockSkills } from '../mock-data/mock-skills';
   providedIn: 'root'
 })
 export class SkillsService {
-  skills: SkillDisplay[];
   constructor() {
-    this.skills = mockSkills.map(skill => {
-      return new SkillDisplay(skill.skillName, skill.skillIconPath)
-    });
-    console.log(this.skills);
+
   }
 
   getSkills(){
-    return this.skills;
+    return mockSkills.map(skill => {
+      return new SkillDisplay(skill.skillName, skill.skillIconPath)
+    });
   }
 }

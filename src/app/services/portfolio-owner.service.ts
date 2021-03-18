@@ -5,25 +5,20 @@ import { mockPortfolioDescription, mockPortfolioName, mockPortfolioImgPath } fro
   providedIn: 'root'
 })
 export class PortfolioOwnerService {
-  name: string;
-  description: string;
-  imgPath: string;
 
   constructor() {
-    this.name = mockPortfolioName;
-    this.description = mockPortfolioDescription;
-    this.imgPath = mockPortfolioImgPath;
+
   }
 
   getName(){
-    return this.name;
+    return mockPortfolioName;
   }
 
   getDescription(){
-    return this.description;
+    return mockPortfolioDescription;
   }
 
   getImgPath(){
-    return this.imgPath;
+    return mockPortfolioImgPath;
   }
 }
