@@ -1,7 +1,7 @@
 <div class="project-card">
   <ul class="project-card-ul">
     <div class="project-card-container" *ngFor="let proj of projectDisplays">
-      <img [src]="proj.projectImgUrl" alt="" class="project-card-img">
+      <img [src]="proj.projectImgUrls[imgIndex]" alt="" class="project-card-img">
       <li class="project-card-li">
         {{ proj.projectName }}
       </li>

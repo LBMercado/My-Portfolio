@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectDisplay } from '../models/project-display/project-display';
+import { ProjectsService } from '../services/projects.service'
 
 @Component({
   selector: 'app-project-card',
@@ -8,12 +9,15 @@ import { ProjectDisplay } from '../models/project-display/project-display';
 })
 export class ProjectCardComponent implements OnInit {
   projectDisplays: ProjectDisplay[];
+  imgIndex: number;
 
-  constructor() {
+  constructor(private projSvc: ProjectsService) {
     this.projectDisplays = [];
+    this.imgIndex = 0;
   }
 
   ngOnInit(): void {
+    this.projectDisplays = this.projSvc.getProjects();
   }
 
 }

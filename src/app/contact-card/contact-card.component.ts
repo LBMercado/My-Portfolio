@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactDisplay } from '../models/contact-display/contact-display';
+import { ContactsService } from '../services/contacts.service';
 
 
 @Component({
@@ -10,11 +11,12 @@ import { ContactDisplay } from '../models/contact-display/contact-display';
 export class ContactCardComponent implements OnInit {
   contactDisplays: ContactDisplay[];
 
-  constructor() {
+  constructor(private contactSvc: ContactsService) {
     this.contactDisplays = [];
   }
 
   ngOnInit(): void {
+    this.contactDisplays = this.contactSvc.getContacts();
   }
 
 }
