@@ -1,0 +1,28 @@
+.footer-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 1vw;
+  background-color: var(--startEndColor);
+  padding: 3vh 0;
+  min-height: 3vh;
+}
+
+.footer-text {
+  justify-self: center;
+}
+
+.footer-div {
+  justify-self: left;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px){
+  .footer-info {
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+  }
+  .footer-div {
+    justify-self: center;
+  }
+}
