@@ -1,0 +1,12 @@
+.author-link {
+  text-decoration: none;
+  color: rgba(187, 21, 151, 0.89);
+}
+
+.author-link:hover {
+  color:rgba(209, 121, 190, 0.904);
+}
+
+.author-pub-link {
+  color: rgba(187, 21, 151, 0.89);
+}
