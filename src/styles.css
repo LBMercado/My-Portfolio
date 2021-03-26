@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+:root{
+  --startEndColor: rgb(225, 239, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+* {
+  font-family: "Roboto Slab", Arial, sans-serif;
+}
