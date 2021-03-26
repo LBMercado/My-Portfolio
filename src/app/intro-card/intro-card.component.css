@@ -4,18 +4,22 @@
   flex-direction: row;
   justify-content: space-evenly;
   background-color: #26dbff;
-  border: 3px solid #DBFF26;
   margin: 0;
   padding: 1vw 1vh;
 }
 
 .intro-img {
-  width: 90%;
+  width: 100%;
+  border-radius: 25%;
 }
 
-.title-1 .desc-1 {
-  margin: 0;
-  padding: 0;
+.title-1 {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.desc-1 {
+  padding: 2vh;
 }
 
 /* Fonts */
