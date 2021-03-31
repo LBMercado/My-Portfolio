@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 2fr;
   row-gap: 1vw;
   background-color: var(--startEndColor);
-  padding: 3vh 0;
+  padding: 3vh 1vw;
   min-height: 3vh;
 }
 
