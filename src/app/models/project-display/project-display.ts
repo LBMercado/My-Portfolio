@@ -1,12 +1,15 @@
+import { ImgInfo } from '../img-info/img-info';
+
 export class ProjectDisplay {
   projectName: string;
-  projectImgUrls: string[];
+  projectImgs: ImgInfo[];
   projectDescription: string;
   technologies: string[];
 
-  constructor(projectName: string, projectImageUrls: string[], projectDescription: string, technologies: string[]){
+  constructor(projectName: string, projectImgs: ImgInfo[],
+              projectDescription: string, technologies: string[]){
     this.projectName = projectName;
-    this.projectImgUrls = projectImageUrls;
+    this.projectImgs = projectImgs;
     this.projectDescription = projectDescription;
     this.technologies = technologies;
   }
