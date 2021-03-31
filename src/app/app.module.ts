@@ -10,6 +10,7 @@ import { FooterInfoComponent } from './footer-info/footer-info.component';
 import { HeaderInfoComponent } from './header-info/header-info.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { FooterCreditComponent } from './footer-credit/footer-credit.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterCreditComponent } from './footer-credit/footer-credit.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
