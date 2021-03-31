@@ -1,18 +1,25 @@
 <div class="project-card">
   <ul class="project-card-ul">
-    <div class="project-card-container" *ngFor="let proj of projectDisplays">
-      <img [src]="proj.projectImgUrls[imgIndex]" alt="" class="project-card-img">
-      <li class="project-card-li">
+    <li class="project-card-li" *ngFor="let proj of projectDisplays">
+      <ngb-carousel *ngIf="proj.projectImgs">
+        <ng-template ngbSlide *ngFor="let img of proj.projectImgs">
+          <img [src]="img.imgUrl" [alt]="img.imgDescription" class="project-card-li-img">
+          <div class="project-card-li-caption-container carousel-caption">
+            <p class="project-card-li-caption">
+              {{ img.imgDescription }}
+            </p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+      <div class="project-card-li-name">
         {{ proj.projectName }}
-      </li>
-      <div class="project-card-technologies-container">
-        <ul class="project-card-technologies-ul">
-          <li class="project-card-technologies-li" *ngFor="let tech of proj.technologies">{{ tech }}</li>
-        </ul>
       </div>
-      <p class="project-card-desc">
+      <ul class="project-card-li-technologies-ul">
+        <li class="project-card-li-technologies-li" *ngFor="let tech of proj.technologies">{{ tech }}</li>
+      </ul>
+      <p class="project-card-li-desc">
         {{ proj.projectDescription }}
       </p>
-    </div>
+    </li>
   </ul>
 </div>
