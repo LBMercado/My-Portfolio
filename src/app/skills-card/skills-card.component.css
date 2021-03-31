@@ -1,26 +1,45 @@
 /* Basic Styles */
 .skills-card {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  background-color: #26dbff;
-  border: 3px solid #DBFF26;
-  margin: 0;
-  padding: 1vw 1vh;
+  background-color: var(--mainContentBgColor);
+  padding: 10vh 0;
 }
 
 .skill-ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10vh;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+.skill-li {
+  justify-self: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .skill-icon {
-  width: 10%;
+  width: 15%;
+}
+
+.skill-li-name {
+
 }
 
 /* Typography */
 
-.skill-ul-li {
-  font-size: 1.5rem;
-  color: #FF26DB;
+.skill-li-name {
+  font-size: 2rem;
+  color: #23812b;
+}
+
+@media screen and (max-width: 600px){
+  .skill-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
