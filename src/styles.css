@@ -3,6 +3,7 @@
 
 :root{
   --startEndColor: rgb(225, 239, 255);
+  --mainContentBgColor: #26dbff;
 }
 
 * {
